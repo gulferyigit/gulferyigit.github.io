@@ -1,0 +1,14 @@
+body {
+    background: rgb(0, 255, 81);
+}
+div {
+    background: white;
+}
+div a {
+    color: black;
+    padding: 10px;
+    font-size: 24px;
+}
+img{
+    width: 10%;
+}
