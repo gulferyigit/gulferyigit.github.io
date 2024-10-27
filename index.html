@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Ankara Bilim Üniversitesi</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            #slider img {
+                display: none;
+            }
+            #slider img.active {
+                display: block;
+            }
+        </style>
+        <script>
+            const numOfSlides = 4;
+            let activeSlide = 0;
+
+            setInterval(function() {
+                document.querySelectorAll("#slider img")[activeSlide].classList.remove('active');
+                document.querySelectorAll("#slider img")[activeSlide + 1].classList.add('active');
+                activeSlide = (activeSlide + 1) % numOfSlides;
+            }, 2000);
+        </script>
+    </head>
+    <body>
+        <div>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="hakkımızda.html">Hakkımızda</a>
+            <a href="gorseller.html">Görseller</a>
+            <a href="iletişim.html">İletişim</a>
+        </div>
+        <h1>Ankara Bilim Üniversitesi</h1>
+
+
+        <div id="slider">
+            <img src="slide/foto1.jpg" class="active" alt="">
+            <img src="slide/foto2.jpg" alt="">
+            <img src="slide/foto3.jpg" alt="">
+            <img src="slide/foto4.jpg" alt="">
+        </div>
+
+        
+
+        
+    </body>
+</html>
